@@ -5,10 +5,10 @@ import Link from 'next/link';
 
 import { useEffect, useState, useRef } from 'react';
 
-export default function Home() {
+export default function Test() {
   return (
     <main className='main index-page'>
-      <Link href='/test'>테스트</Link>
+        <Link href='/'>홈</Link>
     </main>
   )
 }
