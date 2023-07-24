@@ -24,9 +24,6 @@ input,
 textarea {
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !;
 }
-html {
-  font-size: 100px;
-}
 a {
   text-decoration: none;
 }
@@ -37,6 +34,9 @@ img {
 p {
   word-break: keep-all;
   line-height: 1.5;
+}
+html {
+  font-size: 100px;
 }
 @media (min-width: 1800px) {
   html {
@@ -57,39 +57,4 @@ p {
   html {
     font-size: 48.61px;
   }
-}
-#nprogress {
-  pointer-events: none;
-}
-
-#nprogress .bar {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  height: 3px;
-  opacity: 1;
-  background-color: #000;
-  z-index: 999999;
-}
-/* #nprogress .peg {
-  display: block;
-  position: absolute;
-  right: 0px;
-  width: 100px;
-  height: 100%;
-  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
-  opacity: 1.0;
-
-  -webkit-transform: rotate(3deg) translate(0px, -4px);
-      -ms-transform: rotate(3deg) translate(0px, -4px);
-          transform: rotate(3deg) translate(0px, -4px);
-} */
-.nprogress-custom-parent {
-  overflow: hidden;
-  position: relative;
-}
-.nprogress-custom-parent #nprogress .spinner,
-.nprogress-custom-parent #nprogress .bar {
-  position: absolute;
 }
