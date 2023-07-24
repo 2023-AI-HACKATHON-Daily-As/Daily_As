@@ -1,5 +1,7 @@
 import '@/app/css/globals.css';
 import '@/app/css/register.css';
+import '@/app/css/chatbot.css';
+
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
