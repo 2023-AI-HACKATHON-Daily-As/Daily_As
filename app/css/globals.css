@@ -73,6 +73,10 @@ html {
 .absolute {
   position: absolute;
 }
+.g-container {
+  width: 12.4rem;
+  margin: auto;
+}
 .swiper {
   margin-left: auto;
   margin-right: auto;
