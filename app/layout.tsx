@@ -1,9 +1,6 @@
-'use client'
-
 import '@/app/css/globals.css';
+import '@/app/css/register.css';
 import type { Metadata } from 'next';
-
-import { useEffect, useState, useRef } from 'react';
 
 export const metadata: Metadata = {
   title: 'Daily As',
