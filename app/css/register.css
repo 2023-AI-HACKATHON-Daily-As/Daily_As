@@ -1,0 +1,130 @@
+.daily-message-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    overflow: auto;
+}
+.daily-message-box-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+.daily-message-box-container .daily-message-box-content {
+    background: #fff;
+    border-radius: 0.089rem;
+}
+.daily-message-box-content {
+    width: 5rem;
+    top: 50%;
+    left: 50%;
+    padding: .22rem;
+    -webkit-transform: translate(-50%, -50%);
+}
+.daily-message-box-content .message-box-head {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.daily-message-box-content .message-box-head .brand-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: .22rem 0 .22rem 0;
+}
+.daily-message-box-content .message-box-head .brand-logo .inner {
+    width: 1rem;
+    height: auto;
+}
+.daily-message-box-content .message-box-head .message-box-close {
+    position: absolute;
+    width: 0.24rem;
+    height: 0.24rem;
+    cursor: pointer;
+    top: .22rem;
+    right: .22rem;
+    display: flex;
+}
+.daily-message-box-content .message-box-head .message-box-close img {
+    width: 100%;
+    height: 100%;
+}
+.register-container {
+    display: flex;
+    flex-direction: column;
+}
+.register-container .sub-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.register-container .sub-title h1 {
+    color: #000;
+    font-size: .3rem;
+}
+.register-container .agreement {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: .4rem;
+}
+.register-container .agreement .agreement-item p {
+    color: #000;
+    text-align: center;
+    word-break: keep-all;
+    font-size: .2rem;
+}
+.register-container .agreement .agree-btn {
+    width: 100%;
+    cursor: pointer;
+    border-radius: .4rem;
+    margin-top: .9rem;
+    background: #1d1d1f;
+}
+.register-container .agreement .agree-btn p {
+    color: #fff;
+    display: flex;
+    padding: .18rem 0;
+    justify-content: center;
+    font-weight: 600;
+    font-size: .21rem;
+}
+
+.content-swiepr .swiper-wrapper .swiper-slide {
+    opacity: 0;
+    transition: .6s;
+}
+.content-swiepr .swiper-wrapper .swiper-slide.swiper-slide-active {
+    opacity: 1;
+}
+
+
+.register-container .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .4rem;
+}
+.register-container .register .register-item {
+    border-radius: 0.133rem;
+    overflow: hidden;
+    margin-bottom: .15rem;
+}
+.register-container .register .register-item {
+    width: 4.333rem;
+    height: 1rem;
+    cursor: pointer;
+}
+.register-container .register .register-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
