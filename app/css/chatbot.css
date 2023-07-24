@@ -1,0 +1,47 @@
+.customer-service .g-container {
+    padding-top: 1.1rem;
+    width: 10rem;
+}
+.customer-service .style--chating .chating-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.customer-service .style--chating .chating-header .g-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.chating-icon {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.customer-service .style--chating .chating-header .chating-icon {
+    width: 1.45rem;
+    height: 1.45rem;
+}
+.customer-service .style--chating .chating-header .chating-icon img {
+    width: 100%;
+    height: 100%;
+}
+.chating-info {
+    padding-top: .2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chating-info .name {
+    color: #000;
+    font-weight: 800;
+    font-size: .45rem;
+}
+.chating-info .desc {
+    font-size: .2rem;
+    font-weight: 600;
+    color: #373737;
+    margin-top: .1rem;
+}
