@@ -5,8 +5,13 @@
  * 
  * ChatBot Message Box (chatbot)
  */
+import React, { ReactNode } from 'react';
 
-const Message = ({ children }) => {
+interface MessageProps {
+    children: ReactNode;
+}
+
+const Message: React.FC <MessageProps> = ({ children }) => {
     return (
         <div className="chating--message Components__message">{children}</div>
     )

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Register = () => {
-    const swiperRef = useRef(null);
+    const swiperRef = useRef<any>(null);
 
     const RegStart = () => {
         swiperRef.current.swiper.slideTo(1);
@@ -19,7 +19,7 @@ const Register = () => {
                             <img className="inner" src='/UI/img/logo.png'/>
                         </div>
                         <div className="message-box-close">
-                            <Image src="/UI/img/close.png" width={25} height={25}/>
+                            <Image src="/UI/img/close.png" alt="닫기" width={25} height={25}/>
                         </div>
                     </header>
                     <Swiper ref={swiperRef} speed={600} allowTouchMove={false} className="content-swiepr">
@@ -46,10 +46,10 @@ const Register = () => {
                                 </div>
                                 <div className="register">
                                     <div className="register-item">
-                                        <Image src='/UI/img/btn_google_signin_light_normal_web@2x.png' width={390} height={92}/>
+                                        <Image src='/UI/img/btn_google_signin_light_normal_web@2x.png' alt='Google 계정 로그인' width={390} height={92}/>
                                     </div>
                                     <div className="register-item">
-                                        <Image src='/UI/img/kakao_login_large_wide.png' width={390} height={92}/>
+                                        <Image src='/UI/img/kakao_login_large_wide.png' alt='KaKao 계정 로그인' width={390} height={92}/>
                                     </div>
                                 </div>
                             </div>
