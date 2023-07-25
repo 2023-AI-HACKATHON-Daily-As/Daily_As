@@ -40,7 +40,13 @@ const Chat = () => {
                         </div>
                         <div className='chatBot--message'>
                             <MessageBoxChatbot>안녕하세요!</MessageBoxChatbot>
-                            <MessageBoxChatbot>안녕하세요!</MessageBoxChatbot>
+                            <MessageBoxChatbot>귀요미 윤</MessageBoxChatbot>
+                        </div>
+                    </div>
+                    <div className='chatUser-message'>
+                        <div className='chatBot--message'>
+                            <MessageBoxChatbot>넹</MessageBoxChatbot>
+                            <MessageBoxChatbot>녜</MessageBoxChatbot>
                         </div>
                     </div>
                 </div>
