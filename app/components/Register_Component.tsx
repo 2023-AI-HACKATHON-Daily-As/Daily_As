@@ -46,10 +46,10 @@ const Register = () => {
                                 </div>
                                 <div className="register">
                                     <div className="register-item">
-                                        <Image src='/UI/img/btn_google_signin_light_normal_web@2x.png' alt='Google 계정 로그인' width={390} height={92}/>
+                                        <Image src='/UI/img/google-login.jpg' alt='Google 계정 로그인' width={390} height={59}/>
                                     </div>
                                     <div className="register-item">
-                                        <Image src='/UI/img/kakao_login_large_wide.png' alt='KaKao 계정 로그인' width={390} height={92}/>
+                                        <Image src='/UI/img/kakao-login.png' alt='KaKao 계정 로그인' width={390} height={59}/>
                                     </div>
                                 </div>
                             </div>
