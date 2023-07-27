@@ -24,7 +24,7 @@ html {
 }
 input,
 textarea {
-  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
 }
 a {
   text-decoration: none;
@@ -46,27 +46,9 @@ p {
 html {
   font-size: 100px;
 }
-@media (min-width: 1800px) {
-  html {
-    font-size: 90px;
-  }
+html.register {
+  font-size: 90px;
 }
-@media (min-width: 1370px) and (max-width: 1799px) {
-  html {
-    font-size: 75px;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1369px) {
-  html {
-    font-size: 55.56px;
-  }
-}
-@media (min-width: 740px) and (max-width: 1023px) {
-  html {
-    font-size: 48.61px;
-  }
-}
-
 .relative {
   position: relative;
 }
