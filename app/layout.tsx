@@ -1,6 +1,7 @@
 import '@/app/css/globals.css';
 import '@/app/css/register.css';
 import '@/app/css/chatbot.css';
+import '@/app/css/sidebar.css';
 
 import type { Metadata } from 'next';
 
