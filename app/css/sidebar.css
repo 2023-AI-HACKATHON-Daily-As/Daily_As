@@ -1,0 +1,291 @@
+.daily-sidebar {
+    position: fixed;
+    width: 3.4rem;
+    height: 100vh;
+    border-right: 1px solid rgba(121, 111, 111, 0.08);
+    top: 0;
+    left: 0;
+}
+.daily-sidebar .container {
+    padding: 0.28rem;
+    display: flex;
+    flex-direction: column;
+}
+.daily-sidebar .daily-account-info {
+    height: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.account-info__display,
+.account-info__setting {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.account-info__display .daily-account-item,
+.account-info__setting .daily-account-item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.account__displayIMG {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.daily-sidebar .daily-account-info .daily-account-item.account__displayIMG {
+    width: 0.5rem;
+    height: 100%;
+}
+.daily-sidebar .daily-account-info .daily-account-item.account__displayIMG img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.daily-sidebar .daily-account-info .daily-account-item.account__displayName {
+    margin-left: 0.111rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.daily-sidebar .daily-account-info .daily-account-item.account__displayName .account-name {
+    color: #000;
+    font-size: 0.278rem;
+    font-weight: 700;
+}
+.daily-sidebar .daily-account-info .daily-account-item.account__displayName .account-today {
+    color: #353535;
+    font-size: .14rem;
+    font-weight: 500;
+}
+.daily-account-item.account__setting {
+    cursor: pointer;
+}
+
+.daily-search {
+    margin-top: 0.244rem;
+}
+.daily-search .side__searchBar {
+    position: relative;
+    display: flex;
+    background: #F3F3F3;
+    width: 100%;
+    height: 0.38rem;
+    border-radius: 0.278rem;
+    overflow: hidden;
+}
+.daily-search .side__searchBar input {
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #555;
+    font-weight: 500;
+    padding: 0 0.19rem;
+    font-size: 0.167rem;
+}
+.daily-search .side__searchBar .search-icon {
+    position: absolute;
+    height: 100%;
+    width: 0.43rem;
+    right: 0;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+.daily-search .side__searchBar .search-icon svg {
+    display: flex;
+    cursor: pointer;
+}
+.daily-navs {
+    margin-top: 0.333rem;
+    display: flex;
+    flex-direction: column;
+}
+.daily-navs .nav-item {
+    padding: 0.155rem;
+    display: flex;
+    align-items: center;
+    gap: 0.133rem;
+    border-radius: 0.133rem;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 0.1rem;
+}
+.nav-item:hover {
+    background: #F5F5F5;
+}
+.nav-item.active {
+    background: #E3E3E3;
+}
+.nav-item .item-name {
+    color: #353535;
+    font-weight: 500;
+    font-size: 0.16rem;
+}
+
+.daily-today {
+    width: 100%;
+    margin-top: .1rem;
+}
+
+.daily-today .today-title {
+    display: flex;
+}
+.daily-today .today-title h2 {
+    font-size: 0.25rem;
+}
+.daily-today .today-title h2 span {
+    font-size: 0.32rem;
+}
+.daily-team-lounges {
+    margin-top: 0.45rem;
+}
+.menu-title {
+    color: #353535;
+    font-size: 0.13rem;
+    font-weight: 700;
+}
+.daily-team-lounges .lounge-list {
+    display: flex;
+    margin-top: .12rem;
+    flex-direction: column;
+}
+.daily-team-lounges .lounge-list .lounge-none {
+    width: 100%;
+    display: flex;
+}
+.daily-team-lounges .lounge-list .lounge-none p {
+    color: #353535;
+    font-size: .15rem;
+}
+.lounge-list {
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+.lounge-list .lounge {
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+.lounge-list .lounge-logo {
+    border-radius: .05rem;
+    overflow: hidden;
+    position: relative;
+}
+.lounge-list .lounge .lounge-logo {
+    width: 0.33rem;
+    height: 0.33rem;
+}
+.lounge-list .lounge .lounge-logo img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.lounge-list .lounge .lounge-name {
+    margin-left: .1rem;
+}
+.lounge-list .lounge .lounge-name p {
+    font-size: .18rem;
+    font-weight: 600;
+    color: #353535;
+}
+.lounge-icon {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+.lounge-container {
+    border-radius: 0.12rem;
+    overflow: hidden;
+    background: #fff;
+    border: 2px solid #F5F4F4;
+    width: 4.2rem;
+    position: absolute;
+    left: 3.4rem;
+    top: 50%;
+    pointer-events: none !important;
+    transform: translateY(-50%);
+}
+.lounge-container {
+    display: none;
+}
+.lounge.active .lounge-container {
+    display: block;
+}
+
+.lounge-container .lounge-head {
+    width: 100%;
+}
+.lounge-container .lounge-head .lounge-banenr {
+    width: 100%;
+}
+.lounge-container .lounge-head .lounge-banenr img {
+    width: 100%;
+}
+.lounge-container .lounge-info {
+    position: relative;
+    margin-top: -20%;
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+.lounge-container .lounge-info .lounge-logo {
+    width: 1.05rem;
+    height: 1.05rem;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 0.1rem;
+}
+.lounge-container .lounge-info .lounge-logo img {
+    width: 100%;
+    height: 100%;
+}
+.lounge-container .lounge-info .lounge-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .2rem;
+}
+.lounge-container .lounge-info .lounge-content .HEAD {
+    margin-top: .08rem;
+}
+.lounge-container .lounge-info .lounge-content .HEAD .lounge-name {
+    color: #353535;
+    font-weight: 700;
+    font-size: .31rem;
+    margin: 0;
+}
+.lounge-container .lounge-info .lounge-content .HEAD .lounge-desc {
+    color: #353535;
+    font-size: .16rem;
+    margin-top: .04rem;
+}
+.lounge-container .lounge-info .lounge-content .INFO {
+    display: flex;
+    margin-top: .2rem;
+}
+.lounge-container .lounge-info .lounge-content .INFO .team-member {
+    display: flex;
+    align-items: center;
+}
+.lounge-container .lounge-info .lounge-content .INFO .team-member .title,
+.lounge-container .lounge-info .lounge-content .INFO .team-member .desc {
+    color: #353535;
+    font-weight: 500;
+    font-size: .15rem;
+}
+.lounge-container .lounge-info .lounge-content .INFO .team-member .title {
+    margin-right: .07rem;
+}
+.lounge-container .lounge-info .lounge-content .INFO .team-member .desc {
+    color: #4f4f4f;
+}
+.lounge-container .lounge-info .lounge-content .INFO .team-member .logo {
+    display: flex;
+    align-items: center;
+    margin-right: .05rem;
+}
