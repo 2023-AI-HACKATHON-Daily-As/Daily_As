@@ -1,0 +1,195 @@
+.daily-section .section-content {
+    padding: .95rem;
+}
+.daily-section[data-page-type="to-do"] .swiper {
+    margin: auto;
+}
+.daily-section .section-content .section-head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.55rem;
+}
+.daily-section .section-content .section-head .title {
+    color: #353535;
+    font-weight: 800;
+    font-size: 0.62rem;
+}
+.daily-section .section-content .section-head .desc {
+    color: #555;
+    font-weight: 600;
+    font-size: 0.21rem;
+}
+
+/* .to-do .swiper-slide .list {
+    opacity: .5;
+    transition: .5s;
+    pointer-events: none;
+}
+.to-do .swiper-slide.swiper-slide-active .list {
+    opacity: 1;
+    pointer-events: all;
+} */
+.to-do .swiper-wrapper {
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.to-do .swiper-button-prev,
+.to-do .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    background-color: #e3e3e3c6;
+    border-radius: 50%;
+    background-image: url('/UI/img/3arrow.svg');
+    background-position: .18rem .10rem;
+    background-repeat: no-repeat;
+    background-size: 0.13rem 0.25rem;
+    width: 0.45rem;
+    height: 0.45rem;
+    z-index: 9;
+    cursor: pointer;
+    transition: .5s;
+    pointer-events: all;
+}
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+.to-do .swiper-button-prev {
+    left: 0;
+    transform: rotate(-180deg);
+}
+.to-do .swiper-button-next {
+    right: 0;
+}
+
+.To-do-list {
+    /* width: 7.2rem !important; */
+    display: flex;
+    flex-direction: column;
+}
+.To-do-list .head-title {
+    margin-bottom: .1rem;
+}
+.To-do-list .head-title h2 {
+    color: #555;
+    font-size: 0.22rem;
+}
+.To-do-list .Todo-item {
+    position: relative;
+    display: flex;
+    padding: 0.22rem;
+    border: 2px solid #F5F4F4;
+    background: #FFF;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.16rem;
+    transition: .3s;
+    justify-content: space-between;
+    margin-bottom: .3rem; 
+}
+.To-do-list .Todo-item:hover {
+    border-color: #367aff;
+}
+.To-do-list .Todo-item .Todo-Head {
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.To-do-list .Todo-item .Todo-Head .head-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.05rem;
+}
+.To-do-list .Todo-item .Todo-Head .head-title .title {
+    color: #353535;
+    font-size: 0.25rem;
+    font-weight: 700;
+}
+.To-do-list .Todo-item .Todo-Head .head-title .start-time {
+    color: #555;
+    font-size: 0.20rem;
+    font-weight: 500;
+    margin-left: 0.1rem;
+}
+.To-do-list .Todo-item .Todo-Head .head-location {
+    display: flex;
+    align-items: center;
+}
+.To-do-list .Todo-item .Todo-Head .head-location .logo {
+    display: flex;
+    align-items: center;
+}
+.To-do-list .Todo-item .Todo-Head .head-location .name {
+    font-size: 0.16rem;
+    color: #555;
+    font-weight: 500;
+    margin-left: 0.04rem;
+}
+.head-location .name {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    text-overflow: ellipsis;
+}
+.To-do-list .Todo-item .Todo-memo {
+    width: 1.9rem;
+    display: flex;
+    flex-direction: column;
+}
+.To-do-list .Todo-item .Todo-memo .title {
+    color: #353535;
+    font-weight: 700;
+    font-size: 0.20rem;
+}
+.To-do-list .Todo-item .Todo-memo .content {
+    color: #555;
+    font-size: 0.16rem;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+}
+.To-do-list .Todo-item .Todo-status {
+    width: 0.28rem;
+    height: 0.28rem;
+    background: #fff;
+    border-radius: 0.06rem;
+    border: 2px solid #F5F4F4;
+    
+}
+.To-do-list .Todo-item .Todo-status .complete {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.To-do-list .Todo-item .Todo-status .complete svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 67%;
+    left: 43.5%;
+    transform: translate(-50%, -50%);
+}
+.To-do-list .list .Todo-item.none-data {
+    flex-direction: column;
+}
+.To-do-list .list .Todo-item.none-data .title {
+    color: #353535;
+    font-size: 0.25rem;
+    font-weight: 700;
+}
+.to-do-router {
+    font-size: .15rem;
+    padding: .08rem .12rem;
+    color: #fff;
+    margin-top: .06rem;
+    border-radius: 0.36rem;
+    background: #367aff;
+}
