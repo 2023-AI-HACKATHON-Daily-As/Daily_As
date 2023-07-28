@@ -1,0 +1,27 @@
+.article-template {
+    display: flex;
+    flex-direction: column;
+}
+.article-template .article-head {
+    width: 100%;
+    display: flex;
+    padding-top: 1.22rem;
+    flex-direction: column;
+}
+.article-template .article-head h1 {
+    color: #000;
+    font-size: .45rem;
+    font-weight: 800;
+}
+.article-template .article-head span {
+    font-size: .185rem;
+    font-weight: 500;
+    margin-top: .1rem;
+}
+.article-template .article-content {
+    margin-top: .2rem;
+}
+.article-template .article-content p {
+    font-size: .185rem;
+    font-weight: 500;
+}
