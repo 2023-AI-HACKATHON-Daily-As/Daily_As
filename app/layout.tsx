@@ -1,8 +1,11 @@
+'use client'
+
 import '@/app/css/globals.css';
 import '@/app/css/register.css';
 import '@/app/css/chatbot.css';
 import '@/app/css/sidebar.css';
 import '@/app/css/to-do.css';
+import '@/app/css/article.css';
 
 import type { Metadata } from 'next';
 
