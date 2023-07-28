@@ -84,3 +84,6 @@ html.register {
   position: relative;
   transition-property: transform;
 }
+.daily-section {
+  padding-left: 3.4rem;
+}
