@@ -5,7 +5,7 @@
     border-right: 1px solid rgba(121, 111, 111, 0.08);
     top: 0;
     left: 0;
-    z-index: 9999999;
+    z-index: 999;
 }
 .daily-sidebar .container {
     padding: 0.28rem;
@@ -30,6 +30,14 @@
     display: flex;
     height: 100%;
     align-items: center;
+}
+.account-info__setting .daily-account-item {
+    padding: .1rem;
+    transition: .3s;
+    border-radius: 0.133rem;
+}
+.account-info__setting .daily-account-item:hover {
+    background: #F5F5F5;
 }
 
 .account__displayIMG {

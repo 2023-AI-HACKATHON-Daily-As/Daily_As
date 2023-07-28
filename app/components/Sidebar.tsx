@@ -4,8 +4,6 @@ import React, { useEffect, useState } from 'react';
 
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 
-import Link from 'next/link';
-
 import quoteData from '@/app/content/quote.json'
 
 interface Data {
@@ -65,11 +63,11 @@ const SideBar = () => {
                     {/* 변경 되는 콘텐츠 */}
                     <div className='account-info__display'>
                         <div className='daily-account-item account__displayIMG'>
-                            <img src='https://media.discordapp.net/attachments/1132195386031869984/1133315219221905429/130f75a2a5bc89d88c9315d5b76217ba.png'/>
+                            <img src='/UI/img/default_profile.png'/>
                         </div>
                         <div className='daily-account-item account__displayName'>
-                            <span className='account-name'>큐티 뽀짝 섹시 윤</span>
-                            <div className='account-today'>오늘의 예정된 일정은 총 <span>4</span>개</div>
+                            <span className='account-name'>사용자</span>
+                            <div className='account-today'>오늘의 예정된 일정은 총 <span>3</span>개</div>
                         </div>
                     </div>                
                     <div className='account-info__setting'>
@@ -126,14 +124,11 @@ const SideBar = () => {
                     </div>
                 </div>
 
-                <div className='daily-team-lounges'>
+                {/* <div className='daily-team-lounges'>
                     <div className='menu-title'>
                         <h2>팀 라운지</h2>
                     </div>
                     <div className='lounge-list'>
-                        {/* <div className='lounge-none'>
-                            <p>어라? 초대된 라운지가 없는 듯해요. 어서 라운지를 만들어 보세요!</p>
-                        </div> */}
                         <div className={isActive ? `lounge active` : 'lounge'} onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave}>
                             <div className='lounge-logo'>
                                 <img src='https://media.discordapp.net/attachments/1049692305331851317/1134107280690921502/6a1936d5cb5b315311fedbf2d4793c4d404cac83.jpg'/>
@@ -179,7 +174,7 @@ const SideBar = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
