@@ -5,6 +5,7 @@
     border-right: 1px solid rgba(121, 111, 111, 0.08);
     top: 0;
     left: 0;
+    z-index: 9999999;
 }
 .daily-sidebar .container {
     padding: 0.28rem;
@@ -163,15 +164,21 @@
     color: #353535;
     font-size: .15rem;
 }
-.lounge-list {
+/* .lounge-list {
     margin-left: .2rem;
     margin-right: .2rem;
-}
+} */
 .lounge-list .lounge {
     position: relative;
     cursor: pointer;
     align-items: center;
     display: flex;
+    transition: .3s;
+    border-radius: 0.133rem;
+    padding: 0.155rem;
+}
+.lounge-list .lounge:hover {
+    background: #F5F5F5;    
 }
 .lounge-list .lounge-logo {
     border-radius: .05rem;
@@ -179,8 +186,8 @@
     position: relative;
 }
 .lounge-list .lounge .lounge-logo {
-    width: 0.33rem;
-    height: 0.33rem;
+    width: 0.28rem;
+    height: 0.28rem;
 }
 .lounge-list .lounge .lounge-logo img {
     width: 100%;
@@ -197,7 +204,7 @@
 }
 .lounge-icon {
     position: absolute;
-    right: 0;
+    right: 0.155rem;
     display: flex;
 }
 .lounge-container {

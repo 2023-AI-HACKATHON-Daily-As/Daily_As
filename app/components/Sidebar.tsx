@@ -105,14 +105,14 @@ const SideBar = () => {
                         </svg>
                         <div className='item-name'>전체 일정 보기</div>
                     </div>
-                    <div className='nav-item' onClick={() => router.push('/post/abc')}>
+                    <div className='nav-item' onClick={() => router.push('/alert')}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22Z" fill="#968DFF"/>
                             <path d="M16.9 13H12C11.4 13 11 12.6 11 12V7.09998C11 6.49998 11.4 6.09998 12 6.09998C12.6 6.09998 13 6.49998 13 7.09998V11H16.9C17.5 11 17.9 11.4 17.9 12C17.9 12.6 17.5 13 16.9 13Z" fill="white"/>
                         </svg>
-                        <div className='item-name'>알람</div>
+                        <div className='item-name'>알림</div>
                     </div>
-                    <div className='nav-item' onClick={() => router.push('/post/abc')}>
+                    <div className='nav-item' data-path="/to-do" onClick={() => router.push('/to-do')}>
                         <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 8.5L7.19563 14.1286C7.61601 14.584 8.34517 14.5513 8.72306 14.06L18 2" stroke="#367AFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
