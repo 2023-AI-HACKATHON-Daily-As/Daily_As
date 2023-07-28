@@ -48,10 +48,11 @@
     cursor: pointer;
     transition: .5s;
     pointer-events: all;
+    opacity: 0;
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-    opacity: 0;
+    opacity: 0 !important;
     pointer-events: none;
 }
 .to-do .swiper-button-prev {
@@ -192,4 +193,55 @@
     margin-top: .06rem;
     border-radius: 0.36rem;
     background: #367aff;
+}
+
+
+
+.modal {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    pointer-events: none !important;
+    z-index: 9999999;
+    backdrop-filter: blur(28.5px);
+}
+.modal .modal-container {
+    position: absolute;
+    width: 6.5rem;
+    left: 50%;
+    top: 50%;
+    padding: .5rem;
+    border-radius: 0.25rem;
+    background: #ffffff;
+    box-shadow: 0 10.5px 21px rgba(0,0,0,.08);
+    transform: translate(-50%,-50%);
+}
+.modal .modal-container .modal-head {
+    display: flex;
+    flex-direction: column;
+}
+.modal .modal-container .modal-head .info-title h1 {
+    color: #000;
+    font-size: .62rem;
+    font-weight: 700;
+}
+.modal .modal-container .modal-head .info-location {
+    display: flex;
+align-items: center;
+}
+.info-location .logo {
+    display: flex;
+align-items: center;
+}
+.info-location .name {
+    font-size: 0.16rem;
+    color: #555;
+    font-weight: 500;
+    margin-left: 0.04rem;
+}
+.daily-section[data-page-type="to-do"] .swiper:hover .swiper-button-next,
+.daily-section[data-page-type="to-do"] .swiper:hover .swiper-button-prev {
+    opacity: 1;
 }
