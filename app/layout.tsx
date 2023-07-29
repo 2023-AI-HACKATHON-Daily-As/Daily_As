@@ -6,8 +6,11 @@ import '@/app/css/chatbot.css';
 import '@/app/css/sidebar.css';
 import '@/app/css/to-do.css';
 import '@/app/css/article.css';
+import '@/app/css/settings.css'
 
 import type { Metadata } from 'next';
+
+import Settings from '@/app/components/Settings';
 
 export const metadata: Metadata = {
   title: 'Daily As',
@@ -25,6 +28,9 @@ export default function RootLayout({
       <body>
         <div id='root'>
           {children}
+        </div>
+        <div>
+          <Settings />
         </div>
       </body>
     </html>
