@@ -1,0 +1,105 @@
+.settings-modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.settings-modal {
+    /* transition: opacity .2s ease-out,z-index 0s .2s,visibility 0s .2s; */
+    opacity: 0;
+    display: block !important;
+    pointer-events: none;
+    transition: opacity .3s ease-out .05s,transform .35s cubic-bezier(0.23,1,0.32,1);
+    transform: translateY(150px);
+}
+.settings-modal.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+.modal-container {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: .95rem;
+}
+.modal-container .modal-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-container .modal-head .title h1 {
+    color: #353535;
+    font-weight: 800;
+    font-size: 0.62rem;
+}
+.modal-container .modal-head .close {
+    width: 0.23rem;
+    height: 0.23rem;
+    cursor: pointer;
+}
+.modal-container .modal-head .close img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.modal-container .modal-content .settings-item {
+    padding-top: .45rem;
+    display: flex;
+    flex-direction: column;
+}
+.modal-container .modal-content .settings-item .settings-title {
+    margin-bottom: .2rem;
+}
+.modal-container .modal-content .settings-item .settings-title h1 {
+    color: #555;
+    font-weight: 700;
+    font-size: 0.35rem;
+}
+.modal-container .modal-content .settings-item .settings-content {
+    display: flex;
+}
+.modal-container .modal-content .settings-item .settings-content .account-info__display {
+    display: flex;
+}
+.modal-container .modal-content .settings-item .settings-content .daily-account-item.daily-account-item.account__displayName {
+    margin-left: .2rem;
+}
+.modal-container .modal-content .settings-item .settings-content  .account-info__display .account__displayIMG {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.modal-container .modal-content .settings-item .settings-content  .account-info__display .account__displayIMG img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.modal-container .modal-content .settings-item .settings-content .account-info__display .daily-account-item.account__displayName {
+    display: flex;
+    gap: 1.2rem;
+}
+.modal-container .modal-content .settings-item .settings-content .account-info__display .daily-account-item.account__displayName .account-name {
+    color: #353535;
+    font-size: 0.42rem;
+    font-weight: 700;
+}
+.modal-container .modal-content .settings-item .settings-content .account-info__display .daily-account-item.account__displayName .account-social {
+    color: #525252;
+    font-size: 0.18rem;
+    font-weight: 500;
+}
+.modal-container .modal-content .settings-item .settings-content .account-info__display .daily-account-item.account__displayName .account-btn {
+    color: #353535;
+    font-size: 0.18rem;
+    border: 2px solid #F5F4F4;
+    padding: 0.11rem 0.17rem;
+    border-radius: 0.12rem;
+    cursor: pointer;
+    transition: .3s;
+}
+.modal-container .modal-content .settings-item .settings-content .account-info__display .daily-account-item.account__displayName .account-btn:hover {
+    border-color: #367aff;
+}
