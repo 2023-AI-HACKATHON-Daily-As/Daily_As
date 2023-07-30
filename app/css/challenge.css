@@ -1,0 +1,201 @@
+.my-challenge {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.55rem;
+}
+.my-challenge .challenge-title h2 {
+    color: #555;
+    font-size: 0.28rem;
+    font-weight: 700;
+}
+.challenge {
+    margin: 0 !important;
+}
+.challenge-item {
+    width: 3.2rem !important;
+    border-radius: 0.16rem;
+    overflow: hidden;
+    border: 2px solid #F5F4F4;
+}
+.challenge-item .cover-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    background: no-repeat center/cover;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.cover {
+    transition: transform .6s cubic-bezier(0.4, 0, 0.25, 1);
+}
+.challenge-item .cover-wrapper .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.challenge-item .cover-wrapper .cover img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+.challenge-item .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.challenge-item .footer .info {
+    width: 100%;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+.challenge-item .footer .info .name {
+    font-size: 0.35rem;
+    color: #353535;
+    font-weight: 800;
+    word-break: keep-all;
+    text-align: center;
+    
+}
+.challenge-item .footer .info .desc {
+    font-size: 0.17rem;
+    word-break: keep-all;
+    text-align: center;
+    color: #555;
+    margin-top: .1rem;
+}
+.challenge-item .footer .more {
+    display: flex;
+    width: 100%;
+    padding: 0 0.3rem;
+    padding-bottom: 0.3rem !important;
+}
+.challenge-item .footer .more .daily-btn {
+    background: #367AFF;
+    height: 0.48rem;    
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.16rem;
+    width: 100%;
+    display: flex;
+    border-radius: 0.12rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.challenge-item:hover .cover-wrapper .cover {
+    transform: scale(1.05);
+}
+.open-challenge .challenge-title {
+    display: flex;
+    width: 100%;
+}
+.open-challenge .challenge-title h2 {
+    color: #555;
+    font-size: 0.28rem;
+}
+.open-challenge .container {
+    display: flex;
+    flex-direction: column;
+}
+.open-challenge .container .header {
+    width: 100%;
+}
+.open-challenge .container .body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.challenge-title {
+    margin-bottom: .2rem;
+}
+.challenge-banner {
+    width: 100%;
+    height: 4rem;
+    position: relative;
+}
+.cover-wrapper {
+    top: 0;
+}
+.cover-wrapper {
+    left: 0;
+}
+.challenge-banner .cover-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.daily-section[data-page-type="detail"] .cover-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+.challenge-banner .cover-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.challenge-banner .challenge-info {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: relative;
+}
+.info-wrapper {
+    padding-left: .95rem;
+}
+.info-wrapper {
+    padding-right: .95rem;
+}
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.challenge-banner .challenge-info .info-wrapper {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+} 
+
+
+.challenge-banner .challenge-info .info-wrapper .name {
+    font-size: .65rem;
+    font-weight: 800;
+    color: #fff;
+}
+.challenge-banner .challenge-info .info-wrapper .desc {
+    font-size: .25rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: .11rem;
+}
+
+.daily-section[data-page-type="detail"] .header {
+    display: flex;
+    gap: .2rem;
+    justify-content: right;
+}
+.daily-section[data-page-type="detail"] .header .daily-btn {
+    border: 2px solid #161617;
+    color: #161617;
+    font-size: .18rem;
+    cursor: pointer;
+    padding: .12rem .3rem;
+    border-radius: .4rem;
+    transition: .3s;
+}
+.daily-section[data-page-type="detail"] .header .daily-btn:hover {
+    color: #fff;
+    background: #161617;
+}
