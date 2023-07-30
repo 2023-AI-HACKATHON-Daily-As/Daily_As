@@ -1,3 +1,5 @@
+'use client'
+
 const Settings = () => {
     const settingsClose = () => {
         const settings = document.querySelector('.settings-modal');
