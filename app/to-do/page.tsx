@@ -20,7 +20,8 @@ const Todo = () => {
                         spaceBetween={30}
                         allowTouchMove={false}
                         speed={1000}
-                        navigation={true} modules={[Navigation]}>
+                        navigation={true}
+                        modules={[Navigation]}>
                         <SwiperSlide className='To-do-list today'>
                             <div className='head-title'>
                                 <h2>오늘 (8/5)</h2>
