@@ -1,3 +1,48 @@
+.daily-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: .4rem;
+    justify-content: space-between;
+}
+.daily-header .brand-logo {
+    width: 1.5rem;
+}
+.daily-header .brand-logo img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.daily-header .daily-btn {
+    background: #367aff;
+    font-size: .16rem;
+    padding: .14rem .35rem;
+    line-height: 1.5; 
+    border-radius: 5rem;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.daily-header .daily-btn:hover {
+    text-decoration: underline;
+}
+
+.first-Section .register-head {
+    padding-top: .6rem;
+}
+.first-Section .register-head h1 {
+    color: #1d1d1f;
+    font-size: .68rem;
+    word-break: keep-all;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+
+
 .daily-message-box {
     position: fixed;
     top: 0;
@@ -116,7 +161,7 @@
 .register-container .register .register-item {
     border-radius: 0.133rem;
     overflow: hidden;
-    margin-bottom: .4rem;
+    margin-bottom: .2rem;
 }
 .register-container .register .register-item {
     width: 4.333rem;
@@ -124,7 +169,7 @@
     cursor: pointer;
 }
 .register-item {
-    filter: drop-shadow(0 0 4px rgba(0,0,0,.25));
+    filter: drop-shadow(0 0 3px rgba(0,0,0,.25));
 }
 .register-container .register .register-item img {
     width: 100%;
