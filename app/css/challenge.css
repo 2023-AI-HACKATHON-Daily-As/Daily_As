@@ -199,3 +199,80 @@
     color: #fff;
     background: #161617;
 }
+
+
+
+.create-challenge-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 98;
+}
+.create-challenge-modal .modal-container {
+    padding-left: 4.35rem !important;
+    height: 100%;
+    padding: .95rem;
+    background: #fff;
+}
+
+
+
+.create-challenge-modal .modal-container .modal-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.create-challenge-modal .modal-container .modal-head h2 {
+    font-size: .2rem;
+    color: #555;
+    text-align: center;
+}
+.create-challenge-modal .modal-container .modal-head h1 {
+    font-size: .47rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: .04rem;
+}
+
+.create-challenge-modal .modal-container .modal-head .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.create-challenge-modal .modal-container .modal-head .close svg {
+    display: flex;
+}
+
+
+
+.create-challenge-modal .modal-container .modal-content {
+    padding-top: .6rem;
+}
+.create-challenge-modal .modal-container .modal-content .daily-form .daily-form-input {
+    width: 100%;
+    height: 52px;
+    overflow: hidden;
+    border: 1px solid #F5F4F4;
+    border-radius: 0.12rem;
+    margin-bottom: .2rem;
+    font-size: .2rem;
+}
+.create-challenge-modal .modal-container .modal-content .daily-form .daily-form-input .input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.create-challenge-modal .modal-container .modal-content .daily-form .daily-form-input .input {
+    border: 0;
+    outline: 0;
+    padding: 0 .15rem;
+}
+.create-challenge-modal .modal-container .modal-content .daily-form .daily-form-input .textarea {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
