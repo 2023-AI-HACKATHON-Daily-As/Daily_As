@@ -94,7 +94,7 @@ const SideBar = () => {
                     <div className='side__searchBar'>
                         <input placeholder={randomText}/>
                         <div className='search-icon'>
-                            <svg width="18" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="0.18rem" height="0.18rem" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.0554 8.05262C15.0554 11.9506 11.9061 15.1052 8.02772 15.1052C4.14933 15.1052 1 11.9506 1 8.05262C1 4.15464 4.14933 1 8.02772 1C11.9061 1 15.0554 4.15464 15.0554 8.05262Z" stroke="#BDBDBD" stroke-width="2"/>
                                 <line y1="-1" x2="6.68855" y2="-1" transform="matrix(0.706011 0.708201 -0.706011 0.708201 12.2778 13.2632)" stroke="#BDBDBD" stroke-width="2"/>
                             </svg>
@@ -104,26 +104,26 @@ const SideBar = () => {
 
                 <div className='daily-navs'>
                     <div className='nav-item' data-path="/main" onClick={() => router.push('/main')}>
-                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="0.19rem" height="0.2rem" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.0984 0H6.3262C4.15722 0 2.34973 1.91781 2.34973 4.20091V4.56621H3.25348H4.06684H4.15722C4.51872 4.56621 4.88021 4.93151 4.88021 5.47945C4.88021 5.93607 4.51872 6.39269 4.06684 6.39269H3.97647H3.1631H2.25936H0.903743C0.361497 6.39269 0 6.75799 0 7.30594C0 7.85388 0.361497 8.21918 0.903743 8.21918H2.34973V11.8721H3.25348H4.06684H4.15722C4.60909 11.8721 4.97059 12.3288 4.97059 12.7854C4.97059 13.242 4.60909 13.6986 4.15722 13.6986H4.06684H3.1631H2.25936H0.903743C0.451872 13.6986 0 14.1553 0 14.6119C0 15.0685 0.361497 15.5251 0.903743 15.5251H2.34973V15.7991C2.34973 18.1735 4.15722 20 6.3262 20H14.0984C16.2674 20 18.0749 18.0822 18.0749 15.7991V4.20091C18.0749 1.91781 16.2674 0 14.0984 0Z" fill="#FF6868"/>
                         </svg>
                         <div className='item-name'>전체 일정 보기</div>
                     </div>
                     <div className='nav-item' onClick={() => router.push('/alert')}>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="0.24rem" height="0.24rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22Z" fill="#968DFF"/>
                             <path d="M16.9 13H12C11.4 13 11 12.6 11 12V7.09998C11 6.49998 11.4 6.09998 12 6.09998C12.6 6.09998 13 6.49998 13 7.09998V11H16.9C17.5 11 17.9 11.4 17.9 12C17.9 12.6 17.5 13 16.9 13Z" fill="white"/>
                         </svg>
                         <div className='item-name'>알림</div>
                     </div>
                     <div className='nav-item' data-path="/to-do" onClick={() => router.push('/to-do')}>
-                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="0.2rem" height="0.16rem" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 8.5L7.19563 14.1286C7.61601 14.584 8.34517 14.5513 8.72306 14.06L18 2" stroke="#367AFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <div className='item-name'>To-Do</div>
                     </div>
                     <div className='nav-item' data-path="/challenge" onClick={() => router.push('/challenge')}>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="0.2rem" height="0.2rem" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.7114 7.44773C19.4398 6.53947 18.6252 5.81286 17.72 5.72203L13.9183 5.17708L12.1985 1.54404C11.7459 0.544956 10.9312 0 9.93553 0C8.93984 0 8.12518 0.544956 7.6726 1.45322L5.95277 5.08625L2.15105 5.72203C1.24588 5.90369 0.431228 6.53947 0.159676 7.44773C-0.202392 8.44681 0.0691592 9.4459 0.793296 10.1725L3.59933 12.9881L2.96571 16.9845C2.78467 17.9835 3.23726 18.9826 4.05191 19.5276C4.5045 19.8001 4.95708 19.9817 5.50019 19.9817C5.95277 19.9817 6.31484 19.8909 6.67691 19.7092L10.1166 17.8019L13.5562 19.7092C14.3709 20.1634 15.3666 20.0725 16.1812 19.5276C16.9959 18.9826 17.4484 17.9835 17.2674 16.9845L16.6338 12.9881L19.4398 10.1725C19.8019 9.4459 20.0734 8.35599 19.7114 7.44773Z" fill="#F1BC00"/>
                         </svg>
                         <div className='item-name'>챌린지</div>
@@ -181,6 +181,8 @@ const SideBar = () => {
                         </div>
                     </div>
                 </div> */}
+
+
             </div>
         </div>
     )
