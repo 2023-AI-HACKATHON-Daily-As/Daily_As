@@ -1,9 +1,16 @@
-import Image from 'next/image';
+'use client'
 
-export default function Home() {
-  return (
-    <main className='main index-page'>
-      <h1>Daily As</h1>
-    </main>
-  )
-}
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+
+const GoogleLogin: React.FC = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push('/main')
+  }, []);
+
+  return <div>Redirecting to Google Login...</div>;
+};
+
+export default GoogleLogin;

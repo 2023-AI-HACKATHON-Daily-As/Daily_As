@@ -56,11 +56,11 @@
     pointer-events: none;
 }
 .to-do .swiper-button-prev {
-    left: 0;
+    left: .1rem;
     transform: rotate(-180deg);
 }
 .to-do .swiper-button-next {
-    right: 0;
+    right: .1rem;
 }
 
 .To-do-list {

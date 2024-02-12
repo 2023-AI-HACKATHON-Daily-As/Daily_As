@@ -120,7 +120,7 @@ const SideBar = () => {
                         <svg width="0.2rem" height="0.16rem" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 8.5L7.19563 14.1286C7.61601 14.584 8.34517 14.5513 8.72306 14.06L18 2" stroke="#367AFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <div className='item-name'>To-Do</div>
+                        <div className='item-name'>할 일</div>
                     </div>
                     <div className='nav-item' data-path="/challenge" onClick={() => router.push('/challenge')}>
                         <svg width="0.2rem" height="0.2rem" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

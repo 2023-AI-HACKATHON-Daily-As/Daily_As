@@ -1,6 +1,9 @@
 import { useEffect, useState, useRef } from 'react';
 import Link from "next/link";
 import Image from "next/image";
+import axios from 'axios';
+
+import { useRouter } from 'next/navigation';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,6 +13,13 @@ const Register = () => {
     const RegStart = () => {
         swiperRef.current.swiper.slideTo(1);
     };
+
+    const router = useRouter();
+
+    const handleGoogleLogin = async () => {
+        window.location.href = 'https://port-0-daily-as-back-eu1k2llkud4wye.sel4.cloudtype.app/auth/google/callback'
+    };
+
     return (
         <div className="daily-message-box">
             <div className="daily-message-box-container">
@@ -45,7 +55,7 @@ const Register = () => {
                                     <h1>소셜 계정으로 가입</h1>
                                 </div>
                                 <div className="register">
-                                    <div className="register-item">
+                                    <div className="register-item" onClick={handleGoogleLogin}>
                                         <Image src='/UI/img/google-login.jpg' alt='Google 계정 로그인' width={390} height={59}/>
                                     </div>
                                     <div className="register-item">

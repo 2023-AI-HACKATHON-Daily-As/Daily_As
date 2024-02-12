@@ -19,8 +19,6 @@ const Challenge: React.FC = () => {
         setIsModalOpen(false);
     };
 
-    const [count, setCount] = useState<number>(1);
-
     return (
         <main className="main">
             <SideBar />
@@ -80,7 +78,12 @@ const Challenge: React.FC = () => {
                             
                         </div>
                     </div>
-                    <button onClick={handleOpenModal}>Open Modal</button>
+                    <div className="create-challenge" onClick={handleOpenModal}>
+                        <svg width="0.62rem" height="0.62rem" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="37.5" cy="37.5" r="37" fill="white" stroke="#F5F4F4"/>
+                            <path d="M38 21V38M38 38H21M38 38H55M38 38V55" stroke="#367AFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                 </div>
                 
                 <CreateChallenge isOpen={isModalOpen} onClose={handleCloseModal} />

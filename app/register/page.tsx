@@ -25,6 +25,7 @@ const Register = () => {
                     </div>
                 </div>
             </main>
+            <RegisterComponent />
             {/* <Login /> */}
         </>
     )

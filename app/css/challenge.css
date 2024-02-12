@@ -200,8 +200,28 @@
     background: #161617;
 }
 
+.create-challenge {
+    position: fixed;
+    right: 0.45rem;
+    bottom: 0.45rem;
+    cursor: pointer;
+}
 
+.create-challenge-modal {
+    transition: all .6s ease;
+    overflow: hidden;
+}
 
+.create-challenge-modal {
+    transform: translateX(100%);
+}
+
+.create-challenge-modal.open {
+    transform: translateX(0);
+}
+.create-challenge-modal.close {
+    transform: translateX(100%);
+}
 .create-challenge-modal {
     position: fixed;
     width: 100%;
@@ -250,29 +270,159 @@
 
 
 .create-challenge-modal .modal-container .modal-content {
-    padding-top: .6rem;
+    padding-top: .9rem;
+    width: 4.5rem;
+    margin: auto;
 }
 .create-challenge-modal .modal-container .modal-content .daily-form .daily-form-input {
     width: 100%;
-    height: 52px;
+    height: .6rem;
     overflow: hidden;
-    border: 1px solid #F5F4F4;
+    border: 1px solid #d2d2d7;
     border-radius: 0.12rem;
     margin-bottom: .2rem;
-    font-size: .2rem;
 }
 .create-challenge-modal .modal-container .modal-content .daily-form .daily-form-input .input {
     width: 100%;
     height: 100%;
     display: flex;
+    color: #494949;
+    font-size: .16rem;
 }
 .create-challenge-modal .modal-container .modal-content .daily-form .daily-form-input .input {
     border: 0;
     outline: 0;
-    padding: 0 .15rem;
+    padding: 0 .2rem;
 }
 .create-challenge-modal .modal-container .modal-content .daily-form .daily-form-input .textarea {
     width: 100%;
     height: 100%;
     display: flex;
+}
+.create-challenge-modal .modal-container .modal-content .daily-form .daily-form-title {
+    color: #353535;
+    font-weight: 500;
+    font-size: .15rem;
+}
+.daily-form-textarea {
+    margin-top: .4rem !important;
+}
+.create-challenge-modal .modal-container .modal-content .daily-form .daily-form-textarea {
+    width: 100%;
+    height: 1rem;
+    overflow: hidden;
+    border: 1px solid #d2d2d7;
+    border-radius: 0.12rem;
+}
+.create-challenge-modal .modal-container .modal-content .daily-form .daily-form-textarea .textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    display: flex;
+    color: #494949;
+    font-size: .16rem;
+}
+.textarea {
+    outline: none;
+    border: none;
+    padding: .2rem;
+}
+.create-challenge-modal .daily-btn {
+    background: #367AFF;
+    height: 0.48rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.16rem;
+    width: 100%;
+    display: flex;
+    border-radius: 0.12rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top: .4rem;
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+.daily-form-dropdown {
+    margin-bottom: .2rem;
+}
+.daily-form-dropdown .dropdown-box .anticon-caret-down {
+    position: absolute;
+    right: .2rem;
+}
+.daily-form-dropdown .daily-form-title h2 {
+    font-size: .2rem;
+    color: #494949;
+}
+.daily-form-dropdown .dropdown-box {
+    position: relative;
+    width: 100%;
+    height: .6rem;
+    overflow: hidden;
+    border: 1px solid #d2d2d7;
+    border-radius: 0.12rem;
+    display: flex;
+    align-items: center;
+    color: #494949;
+    font-size: .16rem;
+    padding: 0 .2rem;
+    margin: .05rem 0;
+    margin-top: .1rem;
+    cursor: pointer;
+}
+.ant-dropdown-menu {
+    /* padding: 0.12rem !important; */
+    border-radius: 0.12rem !important;
+}
+.dropdown-box .anticon-caret-down {
+    transition: .3s;
+}
+.dropdown-box.ant-dropdown-open .anticon-caret-down {
+    transform: rotate(180deg);
+}
+.ant-dropdown-menu.ant-dropdown-menu-root.ant-dropdown-menu-vertical.ant-dropdown-menu-light.css-dev-only-do-not-override-1jr9qlj {
+    width:100%;
+    background:#fff;
+    box-shadow:0rem 0rem .11rem 0rem rgba(14,15,15,.15);
+    border-radius:.11rem;
+    padding:.13rem 0;
+    margin-top:.13rem;
+}
+:where(.css-dev-only-do-not-override-1jr9qlj).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item { 
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    height:.51rem;
+    margin-bottom:.13rem;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: .15rem;
+    border-radius: 0 !important;
+}
+:where(.css-dev-only-do-not-override-1jr9qlj).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item {
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+}
+:where(.css-dev-only-do-not-override-1jr9qlj).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item:last-child {
+    margin: 0 !important;
+}
+:where(.css-dev-only-do-not-override-1jr9qlj).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item span {
+    display: flex;
+    width: 100%;
+    justify-content: center
+}
+:where(.css-dev-only-do-not-override-1jr9qlj).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item-selected,
+:where(.css-dev-only-do-not-override-1jr9qlj).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item:hover {
+    background-color:#f3f3f3
+}
+:where(.css-dev-only-do-not-override-1jr9qlj).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item-selected {
+    color: #000 !important;
+}
+.daily-form-dropdown {
+    margin-top: .4rem !important;
+}
+:where(.css-dev-only-do-not-override-1jr9qlj).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item.number {
+    height: .35rem;
 }

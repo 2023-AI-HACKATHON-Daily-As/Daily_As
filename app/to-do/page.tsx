@@ -12,8 +12,7 @@ const Todo = () => {
             <div className="daily-section" data-page-type="to-do">
                 <div className="section-content">
                     <div className="section-head">
-                        <div className="title">To-Do</div>
-                        <div className='desc'>할 일을 관리하고 실천해 보세요!</div>
+                        <div className="title">할 일</div>
                     </div>
                     <Swiper className='to-do' 
                         slidesPerView={2}

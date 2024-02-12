@@ -40,3 +40,14 @@ module.exports = withSentryConfig(
     disableLogger: true,
   }
 );
+
+module.exports = {
+	async rewrites() {
+		return [
+			{
+				source: "/:path*", // 들어오는 요청 경로 패턴
+				destination: "https://localhost:3000/:path*", // 라우팅하려는 경로
+			},
+		];
+	},
+}
